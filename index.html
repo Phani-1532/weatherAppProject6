@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <!-- Moving clouds background -->
+    <div class="clouds"></div>
+    
+    <!-- Weather App Container -->
+    <div class="container">
+        <div class="title">
+            <h1>Weather App <i class="fa-solid fa-cloud"></i></h1>
+        </div>
+        <div class="input">
+            <div class="input-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="location-input" placeholder="Enter your Location..." >
+            </div>
+            
+            <input type="button" id="btn" value="Get">
+        </div>
+        <div class="info">
+            <img src="./assets/css/rainy.png" id="icon" alt="Weather Icon">
+            <div class="temp">
+                <span id="temp-value">25</span><span id="unit">&#176</span><span id="c">C</span>
+            </div>
+            <div id="weather-desc">Description: </div>
+            <div id="location">Location: </div>  
+        </div> 
+    </div>
+    
+</body>
+</html>
